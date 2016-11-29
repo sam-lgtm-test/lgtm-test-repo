@@ -1,3 +1,5 @@
+package test;
+
 class Main {
 
 	public String foo;
@@ -10,7 +12,7 @@ class Main {
 		System.out.println("Hello World" + new Main().baz);
 
 		String s = "";
-		for(int i = 0; i < 10; i++) {
+		for (int i = 0; i < 10; i++) {
 			s += "foo";
 		}
 	}
