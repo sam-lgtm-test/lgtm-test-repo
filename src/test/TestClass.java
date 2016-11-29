@@ -1,12 +1,15 @@
 package test;
 
 import java.util.Collection;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 
 class TestClass {
+
+	Set<String> stuff = new LinkedHashSet<>();
 
 	public static String getAString(Object foo) {
 		if (foo instanceof List) {
@@ -24,6 +27,11 @@ class TestClass {
 		} else {
 			return "???";
 		}
+	}
+
+	public void doAThing() {
+		if (this.stuff == stuff && this.stuff.contains(123))
+			stuff.add("foo");
 	}
 
 }
