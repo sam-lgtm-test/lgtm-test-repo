@@ -1,5 +1,7 @@
 package test;
 
+import java.util.ArrayList;
+
 class Main {
 
 	public String foo;
@@ -13,8 +15,9 @@ class Main {
 
 		String s = "";
 		for (int i = 0; i < 10; i++) {
-			s += "foo";
+			s += TestClass.getAString(new ArrayList<Object>());
 		}
+		System.out.println(s);
 	}
 
 }
