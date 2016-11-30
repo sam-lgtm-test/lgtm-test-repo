@@ -1,5 +1,6 @@
 package test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 class Main {
@@ -20,6 +21,7 @@ class Main {
 		String s = "";
 		for(String str : strings) {
 			s += " " + str;
+			s += TestClass.getAString(new ArrayList<Object>());
 		}
 		return s;
 	}
