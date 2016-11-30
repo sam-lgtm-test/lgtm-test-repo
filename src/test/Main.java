@@ -1,6 +1,6 @@
 package test;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 class Main {
 
@@ -13,11 +13,15 @@ class Main {
 		System.out.println("Hello World" + new Main().baz);
 		System.out.println("Hello World" + new Main().baz);
 
+		System.out.println(concat(Arrays.asList("foo", "bar", "baz")));
+	}
+
+	public static String concat(Iterable<String> strings) {
 		String s = "";
-		for (int i = 0; i < 10; i++) {
-			s += TestClass.getAString(new ArrayList<Object>());
+		for(String str : strings) {
+			s += " " + str;
 		}
-		System.out.println(s);
+		return s;
 	}
 
 }
